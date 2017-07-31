@@ -1,0 +1,840 @@
+/**** HEADER ****/
+
+.main-header {
+	border: 1px solid #BFBFBF ;
+}
+
+.logo-header h1 {
+	padding-left: 15px;
+	margin:20px;
+}
+
+.nav-header {
+	padding-left: 150px !important;
+}
+
+.nav-header ul,
+.login-header ul{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+.nav-header li a{
+	float: right;
+	padding-left: 50px;
+	padding-top: 30px;
+	font-size: 1.5em;
+}
+.login-header li a{
+	float: right;
+	padding-right: 50px;
+	padding-top: 30px;
+	font-size: 1.5em;
+}
+
+#createaccount{
+	background-color: #5EC86E;
+	padding:35px;
+}
+
+#dashboard-dropdown{
+	text-align: right !important;
+	padding-top: 30px;
+	font-size: 1.5em;
+}
+
+.dropdown-menu {
+}
+
+.dropdown-menu li a{
+	font-size: 1.5em;
+}
+
+/** Links **/
+
+a:link    {
+	color:#000;
+	text-decoration: none;}  /* unvisited link  */
+a:visited {
+	color:#000;
+	text-decoration: none;}  /* visited link    */
+a:hover   {
+	color:#000 !important;
+	text-decoration: none;}  /* mouse over link */
+a:active  {
+	color:#000;
+	text-decoration: none;}  /* selected link   */ 
+
+/** FOOTER **/
+
+.main-footer {
+	border-top: 1px solid #BFBFBF;
+}
+
+.main-footer ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+.main-footer li {
+	padding-left: 300px;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 1.2em;
+}
+
+.name-footer p{
+	text-align: center;
+}
+
+/** WELCOME PAGE - SECTION **/
+.welcome-headline{
+	padding-left: 150px;
+}
+
+.welcome-headline h2{
+	padding-top:20px;
+}
+
+.welcome-description p {
+	padding-left: 250px;
+	padding-top: 100px;
+	font-size: 1.5em;
+}
+
+.welcome-image img{
+	padding-left: 200px;
+	padding-top: 50px;
+}
+
+.welcome-info {
+	margin-top:100px;
+}
+
+.welcome-info1 {
+	padding-left: 150px !important;
+	padding-bottom: 50px;
+}
+
+.welcome-info2 {
+	padding-left: 100px;
+	padding-bottom: 50px;
+}
+
+.welcome-info1 li,
+.welcome-info2 li {
+	font-size:1.2em;
+	padding-top:20px;
+}
+
+/** ABOUT PAGE - SECTION **/
+
+.about-info h1 {
+	text-align: center;
+	padding-top: 40px;
+}
+
+.about-info p {
+	text-align: center;
+	padding-top: 30px;
+	font-size: 1.5em;
+}
+
+#purpose {
+	padding-bottom: 50px;
+}
+
+.about-picture {
+	display: block;
+	padding-bottom: 50px;
+	padding-left: 336px !important;
+}
+
+/** HOW IT WORKS - SECTION**/
+
+.howitworks-headline h2{
+	padding-left: 150px;
+	padding-top: 30px;
+}
+
+.howitworks-pictures img {
+	padding-left: 120px;
+	padding-top: 20px;
+}
+
+.howitworks-pictures p {
+	padding-left: 60px;
+	font-size: 1.5em;
+	padding-top: 30px;
+}
+
+.howitworks-info p {
+	padding-left: 60px;
+	font-size: 1.5em;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+#howitworks-caption{
+	padding-left: 130px;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#howitworks-caption-results{
+	padding-left: 170px;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+/** FOR DEVELOPERS - SECTION**/
+
+.fordevelopers-headline h2{
+	padding-left:150px;
+	padding-top:20px;
+	padding-bottom: 30px;
+}
+
+.fordevelopers-main1,
+.fordevelopers-main2 {
+	padding-top: 40px;
+}
+
+.fordevelopers-picture img{
+	padding-left:100px;
+}
+
+.fordevelopers-picture p{
+	font-size: 1.2em;
+	padding-left: 250px;
+	padding-top: 20px;
+}
+
+.fordevelopers-info p {
+	padding-left: 150px;
+	font-size: 1.5em;
+	padding-top: 50px;
+}
+
+#fordevelopers-caption-last{
+	padding-bottom: 20px;
+}
+
+.create-account-developer{
+	padding-left: 400px;
+}
+
+#developer-createbutton{
+	width: 300px;
+	height: 70px;
+	background-color: #2877AE;
+	color: white;
+	float: right;
+    padding: 10px;
+    cursor: pointer; 
+    border:none;
+    outline: none;
+	margin-bottom: 100px;
+	margin-right: 1300px;
+	font-size: 20px;
+
+}
+
+/** FOR TEST USERS - SECTION **/
+
+.fortestusers-headline h2{
+	padding-left:200px;
+	padding-top:20px;
+	padding-bottom: 30px;
+}
+
+.fortestusers-main1,
+.fortestusers-main2 {
+	padding-top: 40px;
+}
+
+.fortestusers-picture img{
+	padding-left:100px;
+}
+
+.fortestusers-picture p{
+	font-size: 1.2em;
+	padding-left: 250px;
+	padding-top: 20px;
+}
+
+.fortestusers-info p {
+	padding-left: 200px;
+	font-size: 1.5em;
+	padding-top: 50px;
+}
+
+.testuser-need p{
+	font-size: 1.6em;
+	font-weight: bold;
+	padding-left: 100px;
+}
+
+.testuser-list1 li,
+.testuser-list2 li {
+	font-size: 1.2em;
+	padding-top: 10px;
+}
+
+.testuser-list1,
+.testuser-list2 {
+	padding-left: 150px !important;
+	padding-bottom: 50px;
+}
+
+#testuser-createbutton {
+	width: 300px;
+	height: 70px;
+	background-color: #2877AE;
+	color: white;
+	float: right;
+    padding: 10px;
+    cursor: pointer; 
+    border:none; /* button override */
+    outline: none; /* button override */
+	margin-bottom: 100px;
+	margin-right: 465px;
+	margin-top: 50px;
+	font-size: 20px;
+}
+
+/** CREATE ACCOUNT - SECTION **/
+
+.register-heading{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 70px;
+}
+
+.whichaccount-dropdown{
+	margin-left: 830px !important;
+	margin-bottom: 50px;
+	padding: 10px;
+}
+
+#name-label,
+#email-label,
+#password-label,
+#passwordconfirm-label,
+#remember-label,
+#forgotpassword{
+	font-size: 1.2em;
+}
+
+#createaccount-button {
+	width: 300px;
+	height: 70px;
+	background-color: #2877AE;
+	color: white;
+	float: left;
+    padding: 10px;
+    cursor: pointer; 
+    border:none; /* button override */
+    outline: none; /* button override */
+	margin-bottom: 100px;
+	margin-right: 465px;
+	margin-top: 50px;
+	margin-left: 840px;
+	font-size: 20px;
+}
+
+/** SIGN IN - SECTION **/
+
+.login-heading{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 70px;
+}
+
+#login-button{
+	width: 300px;
+	height: 70px;
+	background-color: #2877AE;
+	color: white;
+	float: left;
+    padding: 10px;
+    cursor: pointer; 
+    border:none; /* button override */
+    outline: none; /* button override */
+	margin-bottom: 100px;
+	margin-right: 465px;
+	margin-top: 50px;
+	margin-left: 175px;
+	font-size: 20px;
+}
+
+#forgotpassword{
+	margin-left: -354px;
+    margin-top: 85px;
+}
+
+/** DEV - DASHBOARD **/
+
+.dashboard-navbar{
+	background-color: #5EC86E;
+}
+
+.dashboard-navbar ul{
+	list-style-type: none;
+}
+
+.dashboard-navbar li a{
+	float: left;
+	padding-left: 150px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 2em;
+}
+
+#home-icon{
+	margin-left: -91px;
+}
+
+#navbar-createtest {
+	font-size: 2em;
+	background-color: #61AD67;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: -9px;
+	padding-right: 30px;
+	padding-left: 30px;
+	color: white;
+}
+
+#createtest-plus {
+	padding-left: 10px;
+}
+
+.dashboard-greeting{
+	padding-top: 20px;
+}
+
+.dashboard-statistics{
+	border: 1px #BFBFBF solid;
+	margin-left: 100px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.dashboard-statistics ul{
+	list-style-type: none;
+	padding-left: 0px !important;
+}
+
+.dashboard-statistics li{
+	font-size: 1.2em;
+	font-weight: bold;
+	padding:10px;
+}
+
+#dashboard-testscreated{
+	margin-bottom: 20px;
+}
+
+.dashboard-testrecent {
+	padding-top: 70px;
+	padding-bottom: 100px;
+}
+
+.dashboard-testrecent h3{
+	padding-bottom: 20px;
+}
+
+.dashboard-testrecent table, th, td{
+	border: 1px solid #BFBFBF;
+	font-size: 1.2em;
+}
+
+.dashboard-testrecent table{
+	width: 100%;
+	padding: 20px;
+}
+
+.dashboard-testrecent th{
+	padding: 10px;
+}
+
+.dashboard-testrecent td{
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+}
+
+.dashboard-testrecent {
+	margin-left: 150px !important;
+}
+
+.dashboard-testrecent tbody tr:nth-child(odd) {
+  background: #eee;
+}
+
+#dashboard-download-button{
+	margin-left: 50px;
+    border:none !important;
+    outline: none !important;
+    background-color: #2877AE !important;
+    color: white;
+}
+
+#button-dashboard-createtest {
+	width: 300px;
+	height: 70px;
+	background-color: #2877AE;
+	color: white;
+	float: right;
+    padding: 10px;
+    cursor: pointer; 
+    border:none;
+    outline: none;
+	font-size: 20px;
+	margin-bottom: 100px;
+}
+
+/** DEV - RESULTS **/
+
+.results-selectproject select{
+	width: 250px !important;
+	height: 70px !important;
+	font-size: 1.5em;
+}
+
+.results-selectproject {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.results-table {
+	font-size:1.2em;
+	padding-bottom: 100px;
+}
+
+.results-table table{
+	width: 100%;
+	padding:20px;
+}
+
+.results-table th{
+	padding: 10px;
+}
+
+.results-table td{
+	padding: 20px 10px 10px 20px;
+}
+
+.results-table tbody tr:nth-child(odd){
+	background-color: #eee;
+}
+
+.results-table-task-heading h4{
+	padding-left: 100px;
+	padding-top: 30px;
+}
+
+.results-table-tasks {
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.results-table-tasks table{
+	width:100%;
+	padding: 20px;
+}
+
+.results-table-tasks th{
+	padding: 10px;
+}
+
+.results-table-tasks td{
+	padding: 20px 10px 10px 20px;
+}
+
+.results-table-tasks tbody tr:nth-child(odd){
+	background-color: #eee;
+}
+
+#results-download-button{
+	border:none !important;
+    outline: none !important;
+    background-color: #2877AE !important;
+    color: white;
+}
+
+/** DEV - ACCOUNT **/
+
+.account-panel {
+	height: 500px;
+	background-color: #2877AE;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.account-panel ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.account-panel li a{
+    display: block;
+    padding-top: 70px;
+    padding-left: 30px;
+    font-size: 1.8em;
+    color: white;
+}
+
+
+#account-hello {
+	padding-top: 60px;
+	padding-left: 10px;
+}
+
+#account-terminate {
+	padding-top: 70px;
+	padding-left: 30px;
+}
+
+.details-triangle-selector {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 50px 86.6px 50px 0;
+	border-color: transparent #BFBFBF transparent transparent;
+	margin-left: -103px;
+    margin-top: 40px;
+
+}
+
+.account-info-panel {
+	background-color: #eee;
+	height: 500px;
+	margin-left: 100px;
+	margin-top: 50px;
+	border: 2px solid #BFBFBF;
+}
+
+/** PROJECTS - INDEX **/
+
+.tests-table{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	font-size:1.2em;
+}
+
+.tests-table h3 {
+	padding-bottom: 20px;
+}
+
+.tests-table table{
+	width: 100%;
+	padding: 20px;
+}
+
+.tests-table th{
+	padding: 10px;
+}
+
+.tests-table td{
+	padding: 20px 10px 10px 20px;
+}
+
+
+.tests-table tbody tr:nth-child(odd) {
+	background-color: #eee;
+}
+
+#button-tests-createtest {
+	width: 300px;
+	height: 70px;
+	background-color: #2877AE;
+	color: white;
+	float: right;
+    padding: 10px;
+    cursor: pointer; 
+    border:none;
+    outline: none;
+	font-size: 20px;
+	margin-bottom: 100px;
+}
+
+#button-tests-createproject {
+	width: 300px;
+	height: 70px;
+	background-color: #2877AE;
+	color: white;
+	float: right;
+    padding: 10px;
+    cursor: pointer; 
+    border:none;
+    outline: none;
+	font-size: 20px;
+	margin-bottom: 100px;
+}
+
+
+.tests-createnewtest {
+	margin-left: 100px;
+}
+
+
+#comment-submit {
+	margin-left: 50px;
+	margin-right: -97px;
+	border:none !important;
+    outline: none !important;
+    background-color: #2877AE !important;
+    color: white;
+}
+
+
+/** PROJECTS - CREATE **/
+
+.create-project-headline h2{
+	padding-top:30px;
+	text-decoration: underline;
+}
+
+.create-project-panel {
+	background-color: #eee;
+	height: 500px;
+	margin-left: 100px;
+	margin-top: 50px;
+	border: 2px solid #BFBFBF;
+	margin-bottom: 100px;
+}
+
+.create-project-form{
+	padding-top: 50px;
+}
+
+.create-project-form label{
+	font-size: 1.5em;
+}
+
+
+.create-project-description{
+	padding-top:30px;
+	padding-bottom: 30px;
+}
+
+#project-description{
+	height: 100px !important;
+}
+
+.create-project-select{
+	padding-top:10px;
+}
+
+.create-project-select select{
+	height: 50px !important;
+	width: 200px;
+	font-size: 1.2em;
+}
+
+#create-project-button{
+	width: 300px;
+	height: 70px;
+	background-color: #2877AE;
+	color: white;
+    padding: 10px;
+    cursor: pointer; 
+    border:none;
+    outline: none;
+    border-radius: 0;
+	font-size: 20px;
+	margin-bottom: 100px;
+	margin-top: 50px;
+	margin-left: 30px;
+}
+
+/** PROJECTS - SHOW **/
+
+.show-project-headline h2{
+	padding-top:30px;
+	text-decoration: underline;
+	text-align: center;
+}
+
+.show-project-panel {
+	background-color: #eee;
+	height: 450px;
+	margin-top: 50px;
+	border: 2px solid #BFBFBF;
+	margin-bottom:50px;
+}
+
+#showprojectname,
+#showprojectdescription,
+#showprojectstatus,
+#showprojecttests {
+	padding-top: 20px;
+	padding-left: 50px;
+	font-size:1.5em;
+	font-weight: bold;
+}
+
+.show-project1 p{
+	font-size: 1.5em;
+	padding-left:70px;
+} 
+
+
+.show-project2 {
+	padding-top: 100px;
+	font-size: 1.2em;
+	padding-left: 50px;
+}
+
+.show-project-stats {
+	background-color: #eee;
+	height: 250px;
+	margin-top: 50px;
+	border: 2px solid #BFBFBF;
+	margin-left:20px;
+}
+
+#showprojectcreator,
+#showprojectdatecreated,
+#showprojectdateupdated {
+	padding-top: 20px;
+	padding-left: 10px;
+	font-size:1.5em;
+}
+
+#edit-project-button,
+#delete-project-button{
+	width: 282px;
+    margin-left: 20px;
+	height: 70px;
+	color: white;
+    padding: 10px;
+    cursor: pointer; 
+    border:none;
+    outline: none;
+    border-radius: 0;
+	font-size: 20px;
+	margin-bottom: 20px;
+	margin-top:20px;
+}
+
+#newtest-button {
+	width: 282px;
+	height: 70px;
+	color: white;
+    padding: 10px;
+    cursor: pointer; 
+    border:none;
+    outline: none;
+    border-radius: 0;
+	font-size: 20px;
+	margin-bottom: 50px;
+	margin-top:20px;
+}
