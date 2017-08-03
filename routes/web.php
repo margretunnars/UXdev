@@ -28,3 +28,6 @@ Route::get('/account/details', 'HomeController@account')->name('account');
 
 //Resource routes
 Route::resource('projects', 'ProjectController');
+Route::resource('tests', 'TestController');
+Route::resource('introductions', 'IntroductionController');
+Route::resource('tasks', 'TaskController');

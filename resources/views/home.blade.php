@@ -59,8 +59,7 @@
     </div> <!-- end of row-->
     <div class="row"> 
         <div class="dashboard-createtest col-md-3 col-md-offset-4">
-            <button id="button-dashboard-createtest"> Create a new <strong>UX test</strong>
-            </button>
+            <a href="{{route('tests.create')}}"><button id="button-dashboard-createtest"> Create a new <strong>UX test</strong></button></a>
         </div>
     </div> <!-- end of row-->
 </div>

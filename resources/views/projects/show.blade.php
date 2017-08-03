@@ -6,7 +6,7 @@
 
 <div class="row">
 	<div class="show-project-headline col-md-12">
-		<h2>Project - {{$project->name}}</h2>
+		<h2>{{$project->name}}</h2>
 	</div>
 </div> <!-- end of row -->
 <div class="row">
@@ -29,15 +29,16 @@
 			<p id="showprojectdateupdated"><strong>Updated at:</strong></p>
 		</div>
 		<div class="show-projects-buttons">
-			<a href="{{route('projects.edit', $project)}}"<button id="edit-project-button" type="submit" class="btn btn-success">Edit Project</button></a>
-	        <a href="{{route('projects.delete', $project)}}"<button id="delete-project-button" type="submit" class="btn btn-danger">Delete Project
-	        </button></a>
+			<a href="{{route('projects.edit', $project)}}"><button id="edit-project-button" type="submit" class="btn btn-success">Edit Project</button></a>
+			{!! Form::open(['route' => ['projects.destroy', $project->id], 'method' => 'DELETE']) !!}
+			{!! Form::submit('Delete Project', ['class' => 'btn-danger', 'id'=>'delete-project-button']) !!}
+			{!! Form::close()!!}
 		</div>
 	</div>
 </div><!-- end of row-->
 <div class="row">
 	<div class="show-project-newtest col-md-3 col-md-offset-5">
-		<button id="newtest-button" type="submit" class="btn btn-primary">Create a test for this project
+		<button id="newtest-button" type="submit" class="btn btn-primary">Create a UXtest for this project
         </button>
 	</div>
 </div><!-- end of row-->

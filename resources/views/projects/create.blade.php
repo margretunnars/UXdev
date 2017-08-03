@@ -12,38 +12,27 @@
 <div class="row">
 	<div class="create-project-panel col-md-8 col-md-offset-2">
 		<div class="create-project-form">
-			<form class="form-horizontal" role="form" method="POST" action="/projects" accept-charset="UTF-8">
-				{{ csrf_field() }}
-				<div class="create-project-name form-group">
-					<label for="name" class="col-md-3 control-label">Project name</label>
-						<div class="col-md-7">
-							<input type="text" class="form-control" name="name">
-						</div> 
-				</div>
-				<div class="create-project-description form-group">
-					<label for="description" class="col-md-3 control-label">Project description</label>
-						<div class="col-md-7">
-							<input id="project-description" type="textarea" class="form-control" name="description">
-						</div>
-				</div>
-				<div class="create-project-status form-group">
-					<label for="status" class="col-md-3 control-label">Select project status</label>
-						<div class="create-project-select col-md-7">
-							<select name="status">
-								<option value="In development">In development</option>
-								<option value="In testing">In testing</option>
-								<option value="Finished testing">Finished testing</option>
-							</select>
-						</div>
-				</div>
-				<div class="create-project-submit form-group">	
-					<div class="col-md-6 col-md-offset-4">
-						<button id="create-project-button" type="submit" class="btn btn-primary">
-                        Create Project
-                        </button>
-					</div>
-				</div>
-			</form>
+		{!! Form::open(['action'=>'ProjectController@store'], ['class'=>'form-horizontal']) !!}
+
+				{{ Form::label('name', 'Project name:', ['class'=>'col-md-3 control-label', 'id'=>'showprojectname']) }}
+				{{ Form::text('name', null, ['class'=>'createprojectname form-control']) }}
+
+				{{ Form::label('description', 'Project description:', ['class'=>'col-md-3 control-label', 'id'=>'showprojectdescription']) }}
+				{{ Form::textarea('description', null, ['class'=>'createprojectdescription form-control']) }}
+
+				{{ Form::label('status', 'Select project status:', ['class'=> 'col-md-3 control-label', 'id'=>'showprojectstatus'])}}
+				{{ Form::select('status', ['In development' => 'In development', 'In testing' => 'In testing', 'Finished testing' => 'Finished testing'], null, ['placeholder' => 'Select status', 'id'=>'createprojectselect']) }}
+		{!! Form::close() !!}
+		</div>
+	</div>
+</div> <!-- end of row -->
+<div class="row">
+		<div class="create-project-submit form-group">	
+			<div class="col-md-6 col-md-offset-4">
+				<button id="create-project-button" type="submit" class="btn btn-primary">
+                    Create Project
+                </button>
+			</div>
 		</div>
 	</div>
 </div> <!-- end of row -->

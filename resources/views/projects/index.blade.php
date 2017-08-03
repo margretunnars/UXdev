@@ -16,18 +16,12 @@
 				<th>Comment</th>
 			</thead>
 			<tbody>
+				@foreach($projects as $project)
 				<tr>
-					<td>Login and signup</td>
-					<td><a href="#">2</a></td>
-					<td>10</td>
-					<td> 
-						<select>
-							<option>Select status</option>
-							<option>In development</option>
-							<option>In testing</option>
-							<option>Finished testing</option>
-						</select>
-					</td>
+					<td>{{$project->name}}</td>
+					<td>{{$project->description}}</td>
+					<td></td>
+					<td>{{$project->status}}</td>
 					<td>
 						<form action="">
 							<input id="comment" type="text">
@@ -35,25 +29,7 @@
 						</form>
 					</td>
 				</tr>
-				<tr>
-					<td>Search</td>
-					<td><a href="#">1</a></td>
-					<td>5</td>
-					<td>
-						<select>
-							<option>Select status</option>
-							<option>In development</option>
-							<option>To be tested</option>
-							<option>In testing</option>
-							<option>Finished testing</option>
-						</select>
-					</td>
-					<td>
-						<form action="">
-							<input id="comment" type="text">
-							<input id="comment-submit" type="submit">
-						</form>
-					</td>
+				@endforeach
 			</tbody>
 		</table>
 	</div>
@@ -63,8 +39,8 @@
 		<a href="{{route('projects.create')}}"><button id="button-tests-createproject">Create a new <strong>Project</strong></button></a>
 	</div>
 	<div class="tests-createnewtest col-md-3">
-		<button id="button-tests-createtest">Create a new <strong>UX test</strong>
-		</button>
+		<a href="{{route('tests.create')}}"><button id="button-tests-createtest">Create a new <strong>UX test</strong>
+		</button></a>
 	</div>
 </div> <!-- end of row -->
 

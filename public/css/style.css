@@ -704,11 +704,11 @@ a:active  {
 
 .create-project-panel {
 	background-color: #eee;
-	height: 500px;
+	height: 550px;
 	margin-left: 100px;
 	margin-top: 50px;
 	border: 2px solid #BFBFBF;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 
 .create-project-form{
@@ -719,25 +719,21 @@ a:active  {
 	font-size: 1.5em;
 }
 
-
-.create-project-description{
-	padding-top:30px;
-	padding-bottom: 30px;
+.createprojectname,
+.createprojectdescription {
+	margin-top: 20px;
+	width:80% !important;
+	margin-left:50px !important;
+	margin-bottom:20px;
 }
 
-#project-description{
-	height: 100px !important;
-}
-
-.create-project-select{
-	padding-top:10px;
-}
-
-.create-project-select select{
-	height: 50px !important;
-	width: 200px;
-	font-size: 1.2em;
-}
+#createprojectselect{
+	margin-top:20px;
+	margin-left:50px;
+	 width: 20%;
+    height: 40px;
+    font-size: 1.2em;
+}	
 
 #create-project-button{
 	width: 300px;
@@ -752,7 +748,7 @@ a:active  {
 	font-size: 20px;
 	margin-bottom: 100px;
 	margin-top: 50px;
-	margin-left: 30px;
+	margin-left:130px;
 }
 
 /** PROJECTS - SHOW **/
@@ -805,7 +801,7 @@ a:active  {
 #showprojectdatecreated,
 #showprojectdateupdated {
 	padding-top: 20px;
-	padding-left: 10px;
+	padding-left: 20px;
 	font-size:1.5em;
 }
 
@@ -826,7 +822,7 @@ a:active  {
 }
 
 #newtest-button {
-	width: 282px;
+	width: 300px;
 	height: 70px;
 	color: white;
     padding: 10px;
@@ -837,4 +833,151 @@ a:active  {
 	font-size: 20px;
 	margin-bottom: 50px;
 	margin-top:20px;
+	margin-left: 10px;
+}
+
+/** PROJECTS - EDIT**/
+
+.edit-project-panel {
+	background-color: #eee;
+	height: 500px;
+	margin-top: 50px;
+	border: 2px solid #BFBFBF;
+	margin-bottom:50px;
+}
+
+#editprojectname,
+#editprojectdescription {
+	margin-left: 50px !important;
+	width: 80% !important;
+	font-size:1.2em;
+}
+
+#editselect{
+	margin-top:10px;
+	margin-left:50px;
+	 width: 20%;
+    height: 40px;
+    font-size: 1.2em;
+}
+
+/** TESTS - CREATE **/
+
+.create-test-headline h2 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+/** _Createtestnavbar**/
+
+.create-test-panel {
+	height: 720px;
+	width: 13% !important;
+	background-color: #2877AE;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.create-test-panel ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.create-test-panel li a{
+    display: block;
+    padding-top: 70px;
+    padding-left: 30px;
+    font-size: 1.8em;
+    color: white;
+}
+
+.create-test-info {
+	background-color: #eee;
+	height: 720px;
+	margin-left: 100px;
+	margin-top: 50px;
+	border: 2px solid #BFBFBF;
+}
+
+.createtest-triangle-selector {
+	margin-top: 90px;
+    margin-left: -60px;
+    margin-right: -100px;
+    width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 50px 86.6px 50px 0;
+	border-color: transparent #BFBFBF transparent transparent;
+}
+
+.createtest-existingproject{
+	padding-top:30px;
+}
+
+.createtest-existingproject select{
+	width: 80%;
+	height: 50px;
+	font-size: 1.2em;
+	padding-top:30px;
+}
+
+.createtest-or p{
+	padding-top: 30px;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding-left:25px;
+}
+
+.createtest-projectcreate{
+	margin-top:30px;
+	width: 80%;
+	height: 50px;
+	font-size:1.2em;
+	padding:5px;
+}
+
+#createtest-project-button {
+	width: 100px;
+	height: 40px;
+	background-color: #2877AE;
+	color: white;
+    padding: 10px;
+    cursor: pointer; 
+    border:none;
+    outline: none;
+    border-radius: 0;
+    font-size:1.2em;
+    display: inline-block;
+    float:right;
+    margin-top: -42px;
+}
+
+.createtest-testheadline h3 {
+	padding-top:30px;
+	padding-left:15px;
+}
+
+.createtest-testname,
+.createtest-testdescription {
+	margin-top:50px;
+	width: 80%;
+	height: 50px;
+	font-size:1.2em;
+	padding:5px;
+}
+
+#create-test-button{
+	width: 300px;
+	height: 70px;
+	color: white;
+    padding: 10px;
+    cursor: pointer; 
+    border:none;
+    outline: none;
+    border-radius: 0;
+	font-size: 20px;
+	margin-top:30px;
+	margin-left: 56px;
+	background-color:#61AD67;
 }

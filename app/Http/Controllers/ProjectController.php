@@ -16,7 +16,11 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        return view('projects.index');
+
+        $projects = Project::where('creator_id', Auth::user()->id)
+                            ->get();
+
+        return view('projects.index')->with('projects', $projects);
     }
 
     /**
@@ -97,7 +101,26 @@ class ProjectController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        //validate the data
+        $this->validate($request, array(
+            'name'=>'required',
+            'description'=>'required',
+            'status'=>'required',
+            ));
+
+        //store the data in database
+        $project = Project::find($id);
+
+        $project->name = $request->name;
+        $project->description = $request->description;
+        $project->status = $request->status;
+        $project->creator_id = Auth::user()->id;
+
+        $project->save();
+
+        //redirect to another page
+
+        return redirect()->route('projects.show', ['id'=>$project->id]);
     }
 
     /**
