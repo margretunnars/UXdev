@@ -27,7 +27,9 @@ Route::get('/results', 'HomeController@results')->name('results');
 Route::get('/account/details', 'HomeController@account')->name('account');
 
 //Resource routes
-Route::resource('projects', 'ProjectController');
 Route::resource('tests', 'TestController');
+Route::get('/existingtests', 'TestController@testsJson');
+
 Route::resource('introductions', 'IntroductionController');
 Route::resource('tasks', 'TaskController');
+Route::resource('questions', 'QuestionController');

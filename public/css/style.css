@@ -60,7 +60,7 @@ a:visited {
 	color:#000;
 	text-decoration: none;}  /* visited link    */
 a:hover   {
-	color:#000 !important;
+	color:#000;
 	text-decoration: none;}  /* mouse over link */
 a:active  {
 	color:#000;
@@ -451,6 +451,7 @@ a:active  {
 .dashboard-testrecent table, th, td{
 	border: 1px solid #BFBFBF;
 	font-size: 1.2em;
+	text-align: center !important;
 }
 
 .dashboard-testrecent table{
@@ -621,7 +622,7 @@ a:active  {
 	border: 2px solid #BFBFBF;
 }
 
-/** PROJECTS - INDEX **/
+/** TESTS - INDEX **/
 
 .tests-table{
 	padding-top: 100px;
@@ -640,10 +641,12 @@ a:active  {
 
 .tests-table th{
 	padding: 10px;
+	text-align: center;
 }
 
 .tests-table td{
 	padding: 20px 10px 10px 20px;
+	text-align: center;
 }
 
 
@@ -654,7 +657,6 @@ a:active  {
 #button-tests-createtest {
 	width: 300px;
 	height: 70px;
-	background-color: #2877AE;
 	color: white;
 	float: right;
     padding: 10px;
@@ -663,20 +665,8 @@ a:active  {
     outline: none;
 	font-size: 20px;
 	margin-bottom: 100px;
-}
-
-#button-tests-createproject {
-	width: 300px;
-	height: 70px;
 	background-color: #2877AE;
-	color: white;
-	float: right;
-    padding: 10px;
-    cursor: pointer; 
-    border:none;
-    outline: none;
-	font-size: 20px;
-	margin-bottom: 100px;
+	border-radius: 0;
 }
 
 
@@ -684,61 +674,24 @@ a:active  {
 	margin-left: 100px;
 }
 
+.index-tablebuttons,
+.home-tablebutton {
+	cursor: pointer; 
+    border:none;
+    outline: none;
+    color: white !important;
+    border-radius: 0 !important;
+    width:120px;
+    position: relative;
 
-#comment-submit {
-	margin-left: 50px;
-	margin-right: -97px;
-	border:none !important;
-    outline: none !important;
-    background-color: #2877AE !important;
-    color: white;
 }
 
+/** EDIT TEST/INTRODUCTION/TASKS/QUESTIONS **/
 
-/** PROJECTS - CREATE **/
-
-.create-project-headline h2{
-	padding-top:30px;
-	text-decoration: underline;
-}
-
-.create-project-panel {
-	background-color: #eee;
-	height: 550px;
-	margin-left: 100px;
-	margin-top: 50px;
-	border: 2px solid #BFBFBF;
-	margin-bottom: 50px;
-}
-
-.create-project-form{
-	padding-top: 50px;
-}
-
-.create-project-form label{
-	font-size: 1.5em;
-}
-
-.createprojectname,
-.createprojectdescription {
-	margin-top: 20px;
-	width:80% !important;
-	margin-left:50px !important;
-	margin-bottom:20px;
-}
-
-#createprojectselect{
-	margin-top:20px;
-	margin-left:50px;
-	 width: 20%;
-    height: 40px;
-    font-size: 1.2em;
-}	
-
-#create-project-button{
-	width: 300px;
+#editbutton{	
+	width: 250px;
 	height: 70px;
-	background-color: #2877AE;
+	background-color: #61AD67;
 	color: white;
     padding: 10px;
     cursor: pointer; 
@@ -746,70 +699,15 @@ a:active  {
     outline: none;
     border-radius: 0;
 	font-size: 20px;
-	margin-bottom: 100px;
-	margin-top: 50px;
-	margin-left:130px;
+    margin-top: 30px;
+    margin-left:80px;
 }
 
-/** PROJECTS - SHOW **/
-
-.show-project-headline h2{
-	padding-top:30px;
-	text-decoration: underline;
-	text-align: center;
-}
-
-.show-project-panel {
-	background-color: #eee;
-	height: 450px;
-	margin-top: 50px;
-	border: 2px solid #BFBFBF;
-	margin-bottom:50px;
-}
-
-#showprojectname,
-#showprojectdescription,
-#showprojectstatus,
-#showprojecttests {
-	padding-top: 20px;
-	padding-left: 50px;
-	font-size:1.5em;
-	font-weight: bold;
-}
-
-.show-project1 p{
-	font-size: 1.5em;
-	padding-left:70px;
-} 
-
-
-.show-project2 {
-	padding-top: 100px;
-	font-size: 1.2em;
-	padding-left: 50px;
-}
-
-.show-project-stats {
-	background-color: #eee;
-	height: 250px;
-	margin-top: 50px;
-	border: 2px solid #BFBFBF;
-	margin-left:20px;
-}
-
-#showprojectcreator,
-#showprojectdatecreated,
-#showprojectdateupdated {
-	padding-top: 20px;
-	padding-left: 20px;
-	font-size:1.5em;
-}
-
-#edit-project-button,
-#delete-project-button{
-	width: 282px;
-    margin-left: 20px;
-	height: 70px;
+#editbutton-tasks,
+#editbutton-questions{
+	width: 250px;
+	height: 50px;
+	background-color: #61AD67;
 	color: white;
     padding: 10px;
     cursor: pointer; 
@@ -817,61 +715,48 @@ a:active  {
     outline: none;
     border-radius: 0;
 	font-size: 20px;
-	margin-bottom: 20px;
-	margin-top:20px;
+    margin-top: 20px;
+    margin-left:80px;
 }
 
-#newtest-button {
-	width: 300px;
+.gobackbutton-tasks,
+.goforwardbutton-tasks,
+.gobackbutton-questions,
+.goforwardbutton-questions{
+	width: 350px;
 	height: 70px;
-	color: white;
+	color: white !important;
     padding: 10px;
     cursor: pointer; 
-    border:none;
+    border:none !important;
     outline: none;
-    border-radius: 0;
-	font-size: 20px;
-	margin-bottom: 50px;
-	margin-top:20px;
-	margin-left: 10px;
+    border-radius: 0 !important;
+	font-size: 20px !important;
+    margin-top: 30px;
+    margin-left:70px;
+    padding-top:20px !important;
 }
 
-/** PROJECTS - EDIT**/
-
-.edit-project-panel {
-	background-color: #eee;
-	height: 500px;
-	margin-top: 50px;
-	border: 2px solid #BFBFBF;
-	margin-bottom:50px;
+.gobackbutton,
+.goforwardbutton{
+	width: 350px;
+	height: 70px;
+	color: white !important;
+    padding: 10px;
+    cursor: pointer; 
+    border:none !important;
+    outline: none;
+    border-radius: 0 !important;
+	font-size: 20px !important;
+    margin-top: 60px;
+    margin-left:70px;
+    padding-top:20px !important;
 }
 
-#editprojectname,
-#editprojectdescription {
-	margin-left: 50px !important;
-	width: 80% !important;
-	font-size:1.2em;
-}
-
-#editselect{
-	margin-top:10px;
-	margin-left:50px;
-	 width: 20%;
-    height: 40px;
-    font-size: 1.2em;
-}
-
-/** TESTS - CREATE **/
-
-.create-test-headline h2 {
-	text-align: center;
-	text-decoration: underline;
-}
-
-/** _Createtestnavbar**/
+/** _Createtestnavba + _Edittestsnavbar**/
 
 .create-test-panel {
-	height: 720px;
+	height: 800px;
 	width: 13% !important;
 	background-color: #2877AE;
 	margin-top: 50px;
@@ -884,24 +769,138 @@ a:active  {
     padding: 0;
 }
 
-.create-test-panel li a{
+.create-test-panel li{
     display: block;
-    padding-top: 70px;
+    padding-top: 85px;
     padding-left: 30px;
     font-size: 1.8em;
     color: white;
 }
 
+.create-test-headline {
+	text-align: center;
+	padding-left:20px;
+}
+
+.create-test-headline h2{
+	text-decoration:underline !important;
+}
+
+/** CREATE A TEST - UNIVERSAL**/
+
+.createtest-headline h3,
+.createintro-headline h3,
+.createtask-headline h3,
+.createquestion-headline h3{
+	margin-left:36px;
+}
+
+
 .create-test-info {
 	background-color: #eee;
-	height: 720px;
+	height: 800px;
 	margin-left: 100px;
 	margin-top: 50px;
 	border: 2px solid #BFBFBF;
 }
 
+
+.labelteststatus,
+.labeltestname,
+.labeltestdescription,
+.labelintroduction,
+.labelquestion,
+.labelresponse {
+	font-size:1.2em;
+	font-weight: bold;
+	margin-left:50px;
+	margin-top:20px;
+}
+
+
+.inputtestname,
+.inputtestdescription,
+.inputintroduction,
+.inputquestion {
+	margin-top: 20px;
+	width:80% !important;
+	margin-left:60px !important;
+	margin-bottom:20px;
+	font-size:1.2em;
+	border: 2px solid #BFBFBF;
+}
+
+#createintroductionbutton{
+	width: 300px;
+	height: 70px;
+	background-color: #61AD67;
+	color: white;
+    padding: 10px;
+    cursor: pointer; 
+    border:none;
+    outline: none;
+    border-radius: 0;
+	font-size: 20px;
+	margin-bottom: 100px;
+	margin-top: 70px;
+	margin-left:50px;
+}
+
+#createtaskbutton-newtask,
+#createquestionbutton-newquestion{
+	width: 350px;
+	height: 70px;
+	color: white;
+    padding: 10px;
+    cursor: pointer; 
+    border:none;
+    outline: none;
+    border-radius: 0;
+	font-size: 20px;
+	margin-bottom: 100px;
+	margin-top: 70px;
+	margin-left:60px;
+}
+
+#createtaskbutton-continue,
+#createquestionbutton-continue{
+	width: 350px;
+	height: 70px;
+	color: white;
+    padding: 10px;
+    cursor: pointer; 
+    border:none;
+    outline: none;
+    border-radius: 0;
+	font-size: 20px;
+	margin-bottom: 100px;
+	margin-top: 70px;
+	margin-left: 60px;
+	padding-top: 17px;
+;
+}
+
+#createtestbutton{
+	width: 300px;
+	height: 70px;
+	background-color: #61AD67;
+	color: white;
+    padding: 10px;
+    cursor: pointer; 
+    border:none;
+    outline: none;
+    border-radius: 0;
+	font-size: 20px;
+	margin-bottom: 100px;
+    margin-top: 30px;
+    margin-left:50px;
+}
+
+
+/** TESTS - CREATE/EDIT **/
+
 .createtest-triangle-selector {
-	margin-top: 90px;
+	margin-top: 104px;;
     margin-left: -60px;
     margin-right: -100px;
     width: 0;
@@ -911,15 +910,16 @@ a:active  {
 	border-color: transparent #BFBFBF transparent transparent;
 }
 
-.createtest-existingproject{
+.createtest-existingtest{
 	padding-top:30px;
 }
 
-.createtest-existingproject select{
+.createtest-existingtest select{
 	width: 80%;
-	height: 50px;
+	height: 40px;
 	font-size: 1.2em;
 	padding-top:30px;
+	margin-left:60px;
 }
 
 .createtest-or p{
@@ -929,55 +929,188 @@ a:active  {
 	padding-left:25px;
 }
 
-.createtest-projectcreate{
-	margin-top:30px;
-	width: 80%;
-	height: 50px;
-	font-size:1.2em;
-	padding:5px;
+.inputteststatus{
+	width: 20%;
+    height: 40px;
+    font-size: 1.2em;
+    margin-top:20px;
 }
 
-#createtest-project-button {
+
+/** INTRODUCTION - CREATE/EDIT **/
+
+.createintro-triangle-selector {
+	margin-top: 226px;
+    margin-left: -60px;
+    margin-right: -100px;
+    width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 50px 86.6px 50px 0;
+	border-color: transparent #BFBFBF transparent transparent;
+}
+.createintro-headline h3{
+	padding-left:30px;
+}
+
+.createintro-introduction p {
+	padding-top:40px;
+	font-size:1.3em;
+	margin-left: 60px;
+}
+
+
+/** TASKS - CREATE **/
+
+.createtask-triangle-selector {
+	margin-top: 345px;
+    margin-left: -60px;
+    margin-right: -100px;
+    width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 50px 86.6px 50px 0;
+	border-color: transparent #BFBFBF transparent transparent;
+}
+
+.createtask-headline h3{
+	padding-left:70px;
+}
+
+.createanothertask {
+	display: inline-block;
+	float:right;
+	margin-top: -47px;
+}
+
+.labeltaskname,
+.labeltaskinstructions,
+.labelstarturl,
+.labelendurl,
+.labelmaxtime {
+	font-size:1.2em;
+	font-weight: bold;
+	margin-left:50px;
+	padding-top:20px;
+}
+
+.inputtaskname,
+.inputtaskinstructions,
+.inputstarturl,
+.inputendurl{
+	width:80% !important;
+	margin-left:60px !important;
+	font-size:1.2em;
+	border: 2px solid #BFBFBF;
+}
+
+.inputmaxtime{
+	width:20%;
+	font-size:1.2em;
+	margin-left: 60px;
+	border: 2px solid #BFBFBF;
+}
+
+/** EXISTINGTASKS **/
+
+.existingtasks-bar{
+	background-color: #eee;
+	height: 800px;
+	margin-left: 100px;
+	margin-top: 50px;
+	border: 2px solid #BFBFBF;
+	width: 80%;
+}
+
+.existingtasks-headline h3{
+	text-align: center;
+}
+
+.existingtasks-headline h4{
+	font-style: italic;
+	text-align: center;
+}
+
+.tasks-info{
+	height:640px;
+	overflow: auto;
+	margin-bottom:10px;
+}
+
+.tasks-info p{
+	font-size: 1.2em;
+}
+
+#firstofeachtask{
+	padding-top: 20px;
+	border-top: solid 2px #BFBFBF;
+}
+
+.existingtasks-buttons{
+	text-align: center;
+	width:100%;
+}
+
+.existingtask-editbutton,
+.existingtask-deletebutton{
 	width: 100px;
-	height: 40px;
-	background-color: #2877AE;
-	color: white;
-    padding: 10px;
+	color: white !important;
     cursor: pointer; 
-    border:none;
+    border: none;
     outline: none;
-    border-radius: 0;
-    font-size:1.2em;
-    display: inline-block;
-    float:right;
-    margin-top: -42px;
+    border-radius: 0 !important;
+    margin-left:30px !important;
+    float: left;
+    font-size: 1.2em;
 }
 
-.createtest-testheadline h3 {
-	padding-top:30px;
-	padding-left:15px;
-}
-
-.createtest-testname,
-.createtest-testdescription {
-	margin-top:50px;
-	width: 80%;
-	height: 50px;
-	font-size:1.2em;
-	padding:5px;
-}
-
-#create-test-button{
-	width: 300px;
-	height: 70px;
-	color: white;
-    padding: 10px;
+.createnewtask-button{
+	width: 150px;
+	color: white !important;
     cursor: pointer; 
-    border:none;
+    border: none;
     outline: none;
-    border-radius: 0;
-	font-size: 20px;
-	margin-top:30px;
-	margin-left: 56px;
-	background-color:#61AD67;
+    border-radius: 0 !important;
+    margin-left:80px;
+    padding:12px !important;
+    font-size:1.2em !important;
+}
+
+
+/** QUESTIONS- CREATE **/
+
+.createquestion-triangle-selector {
+	margin-top: 462px;
+    margin-left: -60px;
+    margin-right: -100px;
+    width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 50px 86.6px 50px 0;
+	border-color: transparent #BFBFBF transparent transparent;
+}
+
+.createanotherquestion {
+	margin-top: -90px;
+	display: inline-block;
+	float:right;
+}
+
+.createquestion-headline h3 {
+	padding-left:50px;
+	padding-bottom: 50px;
+}
+
+#createquestion-likertlabel {
+	padding-top:50px;
+}
+
+#createquestion-radiolabel1 {
+	padding-left: 150px;
+	font-size: 1.3em;
+}
+
+#createquestion-radiolabel2 {
+	padding-left: 369px;
+	font-size: 1.3em;
 }

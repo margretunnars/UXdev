@@ -16,7 +16,6 @@ class CreateQuestionsTable extends Migration
         Schema::enableForeignKeyConstraints();
         Schema::create('questions', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('project_id')->unsigned();
             $table->integer('test_id')->unsigned();
             $table->integer('creator_id')->unsigned();
             $table->string('question');
@@ -24,9 +23,8 @@ class CreateQuestionsTable extends Migration
             $table->timestamps();
         });
 
-        Schema::table('questions', function($table){
-            $table->foreign('project_id')->references('id')->on('projects');
-            $table->foreign('test_id')->references('id')->on('tests');
+        Schema::table('questions', function($table){;
+            $table->foreign('test_id')->references('id')->on('tests')->onDelete('cascade');
             $table->foreign('creator_id')->references('id')->on('users');
         });
     }

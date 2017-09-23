@@ -16,15 +16,14 @@ class CreateTestsTable extends Migration
         Schema::enableForeignKeyConstraints();
         Schema::create('tests', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('project_id')->unsigned();
             $table->integer('creator_id')->unsigned();
             $table->string('name');
             $table->string('description');
+            $table->string('status');
             $table->timestamps();
         });
 
         Schema::table('tests', function($table){
-            $table->foreign('project_id')->references('id')->on('projects');
             $table->foreign('creator_id')->references('id')->on('users');
         });
     }

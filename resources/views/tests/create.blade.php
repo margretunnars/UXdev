@@ -4,53 +4,43 @@
 
 @include('partials/_dashboardnavbar')
 
-<div class="row">
-	<div class="create-test-headline col-md-">
-		<h2>Create a UX test</h2>
-	</div>
-</div><!-- end of row-->
-
 @include('partials/_createtestnavbar')
 
 <div class="createtest-triangle-selector col-md-1">
 </div>
 <div class="create-test-info col-md-6">
-	<div class="createtest-projectheadline col-md-3 col-md-offset-5">
-		<h3>Project</h3>
-	</div>
-	<div class="createtest-existingproject col-md-9 col-md-offset-2">
-		<select>
-			<option>Choose and existing project</option>
-			<option>Login and signup</option>
-			<option>Search</option>
-		</select>
-	</div>
-	<div class="createtest-or col-md-3 col-md-offset-5">
-		<p> OR </p>
-	</div>
-	<div class="createtest-createproject col-md-9 col-md-offset-2">
-		{!! Form::open(['action'=>'ProjectController@store'], ['class'=>'form-horizontal']) !!}
-				{{ Form::text('name', null, ['class'=>'createtest-projectcreate', 'placeholder' => 'Create a new Project'])}}
-		{!! Form::close() !!}
-		<button id="createtest-project-button" type="submit" class="btn btn-primary">Create
-        </button>
-	</div>
-	<hr>
-	<div class="createtest-testheadline col-md-3 col-md-offset-5">
+	<div class="createtest-headline col-md-8 col-md-offset-4">
 		<h3>Test</h3>
 	</div>
-	<div class="createtest-namedescription col-md-9 col-md-offset-2">
-		{!! Form::open(['action' => 'TestController@store'], ['class'=>'form-horizontal']) !!}
-			{{Form::text('name', null, ['class'=>'createtest-testname', 'placeholder' => 'Test name']) }}
-			{{Form::text('description', null, ['class'=>'createtest-testdescription', 'placeholder' => 'Test description'])}}
-		{!! Form::close() !!}
-	</div>
-	<div class="createtest-submitbutton col-md-3 col-md-offset-3">
-		<button id="create-test-button" type="submit" class="btn btn-success">Save and continue
-        </button>
-	</div>
-</div>
-</div> <!-- end of row in createtestnavbar-->
+	@if(count($existingtests) > 0)
+		<div class="createtest-existingtest col-md-10 col-md-offset-1">
+		<select id="selectExistingTest">
+			<option value="">Select existing test</option>
+		</select>
+		</div>
+		<div class="createtest-or col-md-3 col-md-offset-5">
+			<p> OR </p>
+		</div>
+	@endif
+	<div class="createtest col-md-10 col-md-offset-1">
+		{!! Form::open(['action'=>'TestController@store', 'class'=>'createOrUpdateTest']) !!}
 
+				{{ Form::label('name', 'Test name:', ['class'=>'labeltestname col-md-3 control-label']) }}
+				{{ Form::text('name', null, ['class'=>'inputtestname', 'placeholder' => 'Create a name for your project']) }}
+
+				{{ Form::label('description', 'Test description:', ['class'=>'labeltestdescription col-md-3 control-label']) }}
+				{{ Form::textarea('description', null, ['class'=>'inputtestdescription', 'placeholder' => 'Create a description for your project']) }}
+
+				{{ Form::label('status', 'Select test status:', ['class'=> 'labelteststatus col-md-4 control-label'])}}
+				{{ Form::select('status', ['In development' => 'In development', 'In testing' => 'In testing', 'Finished testing' => 'Finished testing'], null, ['placeholder' => 'Select status', 'class'=>'inputteststatus']) }}
+	</div>
+	<div class="create-test-submit form-group">	
+		<div class="col-md-6 col-md-offset-3">
+			<button id="createtestbutton" type="submit" class="btn btn-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Save and continue</button>
+        </div>
+    </div>
+</div> <!-- end of row -->
+{!! Form::close() !!}
 
 @endsection
+
