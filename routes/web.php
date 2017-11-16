@@ -15,7 +15,6 @@ Route::get('/', 'PagesController@getIndex');
 Route::get('about', 'PagesController@getAbout');
 Route::get('howitworks', 'PagesController@getHowItWorks');
 Route::get('fordevelopers', 'PagesController@getForDevelopers');
-Route::get('fortestusers', 'PagesController@getForTestUsers');
 
 //Authentication routes
 Auth::routes();
@@ -24,7 +23,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/projects', 'HomeController@projects')->name('projects');
 Route::get('/results', 'HomeController@results')->name('results');
-Route::get('/account/details', 'HomeController@account')->name('account');
+Route::get('/account/details', 'HomeController@account')->name('details');
+Route::get('/account/edit', 'HomeController@accountEdit')->name('edit');
+Route::get('/account/terminate', 'HomeController@accountTerminate')->name('terminate');
 
 //Resource routes
 Route::resource('tests', 'TestController');
@@ -33,3 +34,4 @@ Route::get('/existingtests', 'TestController@testsJson');
 Route::resource('introductions', 'IntroductionController');
 Route::resource('tasks', 'TaskController');
 Route::resource('questions', 'QuestionController');
+Route::resource('script', 'JavascriptController');

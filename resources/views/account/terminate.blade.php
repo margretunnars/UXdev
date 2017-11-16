@@ -6,7 +6,7 @@
 
 @include('partials/_accountnavbar')
 
-	<div class="account-info-panel col-md-6">
+	<div class="account-info-panel col-md-8">
 			<div class="details-triangle-selector">
 			</div>
 	</div>

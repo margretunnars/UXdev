@@ -27,7 +27,8 @@
                         <th>Test description</th>
                         <th>Date created</th>
                         <th>Get results</th>
-                        <th>Download data</th>
+                        <th>Download task responses</th>
+                        <th>Download question responses</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -37,7 +38,8 @@
                         <td>{{$test->description}}</td>
                         <td>{{$test->created_at}}</td>
                         <td><a href="/results">Click here</a></td>
-                        <td><a href="#" class="home-tablebutton btn btn-primary">Download</a></td>
+                        <td><a href="/api/task-responses/{{$test->id}}" class="home-tablebutton btn btn-primary">Download</a></td>
+                        <td><a href="/api/question-responses/{{$test->id}}" class="home-tablebutton btn btn-primary">Download</a></td>
                     </tr>
                     @endforeach
                 </tbody>

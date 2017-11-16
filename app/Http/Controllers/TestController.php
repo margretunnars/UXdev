@@ -113,7 +113,9 @@ class TestController extends Controller
     {
         $test = Test::find($id);
 
-        return view('tests.show')->with('test', $test);
+        $testId = Input::get('testId', false);
+
+        return view('tests.show')->with('test', $test)->with('testId', $testId);
     }
 
     /**

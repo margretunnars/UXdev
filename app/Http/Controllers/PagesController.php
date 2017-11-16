@@ -25,9 +25,4 @@ class PagesController extends Controller
 
     	return view('pages.fordevelopers');
     }
-
-    public function getForTestUsers(){
-
-    	return view('pages.fortestusers');
-    }
 }

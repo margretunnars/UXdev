@@ -50,11 +50,24 @@ class HomeController extends Controller
 
     public function results()
     {
-        return view('results');
+        $tests= Test::where('creator_id', Auth::user()->id)
+                            ->get();
+
+        return view('results')->with('tests', $tests);
     }
 
     public function account()
     {
         return view('account/details');
+    }
+
+    public function accountEdit()
+    {
+        return view('account/edit');
+    }
+
+    public function accountTerminate()
+    {
+        return view('account/terminate');
     }
 }

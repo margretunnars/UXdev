@@ -42,7 +42,6 @@
 	<div class="existingtasks-bar col-md-2">
 		<div class="existingtasks-headline">
 			<h3>Existing tasks</h3>
-			<h4>Test name</h4>
 		</div>
 		<div class="tasks-info">
 		@foreach($existingtasks as $thistask)

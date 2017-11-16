@@ -9,7 +9,7 @@
 			<li class="create-test-step">2) Introduction</a></li>
 			<li class="create-test-step">3) Tasks</a></span></li>
 			<li class="create-test-step">4) Questions</a></span></li>
-			<li class="create-test-step">5) Script</a></span></li>
-			<li class="create-test-step">6) Preview</a></span></li>
+			<li class="create-test-step">5) Javascript tag</a></span></li>
+			<li class="create-test-step">6) Test completed</a></span></li>
 		</ul>
 	</div>

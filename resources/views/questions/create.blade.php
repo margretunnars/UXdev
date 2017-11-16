@@ -31,7 +31,7 @@
 		</div>
 		<div class="createtest-submitbutton col-md-12">
 	        <button type="submit" id="createquestionbutton-newquestion" class="btn btn-success" aria-label="Left Align"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>  Save question</button>
-			<a href="#" id="createquestionbutton-continue" class="btn btn-primary"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Go to Script</a>
+			<a href="{{route('script.create', ['testId'=>$testId])}}" id="createquestionbutton-continue" class="btn btn-primary"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Go to Javascript tag</a>
 		</div>
 	</div>
 				{!! Form::close() !!}
@@ -39,7 +39,6 @@
 	<div class="existingtasks-bar col-md-2">
 		<div class="existingtasks-headline">
 			<h3>Existing questions</h3>
-			<h4>Test name</h4>
 		</div>
 		<div class="tasks-info">
 		@foreach($existingquestions as $thisquestion)

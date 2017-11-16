@@ -36,7 +36,7 @@
 	    </div>
 	    <div class="col-md-11">
         	<a href="{{route('tests.index')}}" class="gobackbutton-questions btn btn-primary"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Go back to Tests</a>
-        	<a href="#" class="goforwardbutton-questions btn btn-primary"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Go forward to Script</a>
+        	<a href="{{route('script.create', ['testId'=>$testId])}}" class="goforwardbutton-questions btn btn-primary"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Go forward to Javascript tag</a>
         </div>
 	</div>
 	{!! Form::close() !!}
@@ -44,7 +44,6 @@
 		<div class="existingtasks-bar col-md-2">
 			<div class="existingtasks-headline">
 				<h3>Existing questions</h3>
-				<h4>Test name</h4>
 			</div>
 			<div class="tasks-info">
 			@foreach($existingquestions as $thisquestion)
